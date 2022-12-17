@@ -78,7 +78,7 @@ function Features() {
                 >
                   <div>
                     <h6 className="h5 mb-3 text-violet-500 text font-semibold">
-                      Digtal Presence & Brand Identity
+                      Digital Presence & Brand Identity
                     </h6>
                     <div className="font-bold text-xl py-2 leading-snug tracking-tight mb-1">
                       Let's build your ecosystem
@@ -205,14 +205,55 @@ function Features() {
                       height="462"
                       alt="Features bg"
                     />
-                    <img
+                    {/* <img
                       className="md:max-w-none absolute w-full left-0 transform animate-float"
                       src={FeaturesElement}
                       width="500"
                       height="44"
                       alt="Element"
                       style={{ top: "30%" }}
-                    />
+                    /> */}
+                    <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
+                      <div className="flex flex-row-between">
+                        <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
+                          Digital presence & Brand identity
+                        </h2>
+                        <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full shadow flex-shrink-0 ml-3 hover:scale-105">
+                          <svg
+                            className="w-5 h-5 fill-violet-700"
+                            viewBox="0 0 12 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <p className="text-gray-600">
+                        Having a strong brand identity is essential for any
+                        business, as it helps to differentiate your company from
+                        competitors and build trust with customers. A
+                        well-defined brand identity includes elements such as
+                        your company's name, logo, color palette, font, and tone
+                        of voice. These elements should be consistent across all
+                        of your marketing materials and communication channels,
+                        and should accurately reflect your brand's personality
+                        and values. Having a strong brand identity can help you
+                        attract and retain customers, as they will recognize and
+                        trust your brand. It can also help you build a loyal
+                        following and drive word-of-mouth marketing. As a
+                        marketing agency, we can help you develop a
+                        comprehensive brand identity that accurately represents
+                        your company and resonates with your target audience.
+                        Our team will work with you to understand your brand's
+                        personality and values, and will create a visual and
+                        verbal identity that reflects those qualities. We'll
+                        also help you implement your new brand identity across
+                        all of your marketing materials and communication
+                        channels, ensuring consistency and clarity. Let us help
+                        you build a strong brand identity that sets your
+                        business apart from the competition.
+                      </p>
+                    </div>
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -235,14 +276,47 @@ function Features() {
                       height="462"
                       alt="Features bg"
                     />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: "30%" }}
-                    />
+                    <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
+                      <div className="flex flex-row-between">
+                        <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
+                          Data analitics
+                        </h2>
+                        <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full shadow flex-shrink-0 ml-3 hover:scale-105">
+                          <svg
+                            className="w-5 h-4 fill-pink-600"
+                            viewBox="0 0 12 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z"
+                              fillRule="nonzero"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p className="text-gray-600 tracking-wide">
+                        Using data analytics in your advertising campaigns can
+                        help you make more informed decisions and improve the
+                        performance of your ads.<br></br>
+                        <span className="font-bold">
+                          By collecting and analyzing data on the effectiveness
+                          of your campaigns, you can identify patterns and
+                          trends that can guide your strategy.
+                        </span>{" "}
+                        <br></br>
+                        <br></br>
+                        For example, you can use data to understand which types
+                        of ads are generating the most clicks, conversions, or
+                        engagement, and adjust your approach accordingly.
+                        <br></br>
+                        You can also use data to determine the best times to run
+                        your ads, the most effective channels to use, and the
+                        target audience that is most likely to respond to your
+                        ads. By leveraging the power of data analytics, you can
+                        optimize your advertising efforts and get the best
+                        possible return on your investment.
+                      </p>
+                    </div>
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -265,14 +339,49 @@ function Features() {
                       height="462"
                       alt="Features bg"
                     />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: "30%" }}
-                    />
+                    <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
+                      <div className="flex flex-row-between">
+                        <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
+                          Ads & Traffic
+                        </h2>
+                        <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full shadow flex-shrink-0 ml-3 hover:scale-105">
+                          <svg
+                            className="w-5 h-5 fill-yellow-500"
+                            viewBox="0 0 12 12"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z"
+                              fill="#191919"
+                              fillRule="nonzero"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <p className="text-gray-600 tracking-wide">
+                        Targeted advertising is a powerful way to reach your
+                        ideal customers and drive more sales for your business.
+                        Unlike traditional advertising methods, which rely on
+                        reaching a broad audience, targeted ads are focused on
+                        reaching specific individuals based on their interests,
+                        demographics, and other factors.<br></br>
+                        This allows you to deliver your message to the people
+                        most likely to be interested in your product or service,
+                        increasing the likelihood that they will engage with
+                        your brand and make a purchase. By using targeted ads,
+                        you can also save money on advertising costs by only
+                        reaching the audience that matters most to your
+                        business.
+                        <br></br>
+                        <br></br>
+                        <span className=" font-bold">
+                          {" "}
+                          With the help of a skilled marketing team, you can
+                          create highly effective targeted ad campaigns that
+                          deliver results for your business.
+                        </span>
+                      </p>
+                    </div>
                   </div>
                 </Transition>
               </div>

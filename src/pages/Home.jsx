@@ -8,6 +8,7 @@ import Testimonials from "../partials/Testimonials";
 import Newsletter from "../partials/Newsletter";
 import Footer from "../partials/Footer";
 import About from "../partials/About";
+import FAQ from "../partials/FAQ";
 function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">

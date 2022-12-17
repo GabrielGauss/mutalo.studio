@@ -1,5 +1,6 @@
 {
   "name": "simple-light-react",
+  "homepage": "https://mutalo.studio",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
@@ -9,6 +10,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.3",
     "@heroicons/react": "^2.0.12",
+    "@material-tailwind/react": "^1.2.4",
     "@tailwindcss/forms": "^0.5.2",
     "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",

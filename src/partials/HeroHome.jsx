@@ -8,7 +8,7 @@ function HeroHome() {
 
   return (
     <section className="relative">
-      {/* Illustration behind hero content */}
+      {/* Ilustracion detraz del hero */}
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
         aria-hidden="true"
@@ -67,7 +67,8 @@ function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              With<strong> Mutalo</strong>, turn web visitors into customers.
+              With<strong> Mutalo</strong>, turn your web visitors into
+              customers.
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -77,7 +78,7 @@ function HeroHome() {
               <div>
                 <a
                   className="btn text-white bg-violet-500 hover:bg-violet-600 w-full mb-4 sm:w-auto sm:mb-0"
-                  href="#0"
+                  href="https://calendly.com/gabrielveron134/30min"
                 >
                   let's do this
                 </a>

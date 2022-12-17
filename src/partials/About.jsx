@@ -16,12 +16,12 @@ const About = () => {
       {/* <span className="hide md:text-10xl text-gray-300">|</span> */}
       <p className=" mb-20 p-10  text-xl text-gray-500 text-left basis-2/3 md:py-20  md:px-40">
         Mutalo is a succesfull young marketing agency that loves their clients.
+        <br></br>
         <strong>Our mission and vision</strong> is to provide the best ROI
         possilbe while building the relationship between client and agency along
-        the way. We are a curious agency, we love to find new ways of doing
-        things, testing our strategies and getting inspired by what we do..{" "}
-        <strong>Our goal</strong> is to build strong relationship with our
-        clients , holding them at highest value in everything we do.
+        the way.
+        <br></br>We are a curious agency, we love to find new ways of doing
+        things, testing our strategies and getting inspired by what we do.{" "}
       </p>
     </div>
   );
