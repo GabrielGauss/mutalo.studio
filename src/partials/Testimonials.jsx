@@ -16,6 +16,7 @@ function Testimonials() {
           height="518"
           viewBox="0 0 1760 518"
           xmlns="http://www.w3.org/2000/svg"
+          className="animate-float"
         >
           <defs>
             <linearGradient
@@ -58,7 +59,7 @@ function Testimonials() {
           </div>
 
           {/* LOGOS */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-2 grid-cols-4 md:grid-cols-5">
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-4 grid-cols-4 md:grid-cols-5">
             {/* FACEBOOK */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
               <svg
@@ -185,7 +186,7 @@ function Testimonials() {
               </svg>
             </div>
 
-            {/* Item */}
+            {/* Amazon */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto col-start-2 col-end-4">
               <svg
                 className="max-w-full "
@@ -224,9 +225,7 @@ function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CEO & Co-Founder</span>{" "}
-                  <a className="text-blue-600 hover:underline" href="#0">
-                    @almaClothing
-                  </a>
+                  <p className="text-blue-600">almaClothing</p>
                 </div>
               </div>
             </div>
@@ -255,9 +254,7 @@ function Testimonials() {
                 </cite>
                 <div className="text-gray-600">
                   <span>CSO & Co-Founder</span>{" "}
-                  <a className="text-blue-600 hover:underline" href="#0">
-                    @Ladiva Cosmetics
-                  </a>
+                  <p className="text-blue-600 ">Ladiva Cosmetics</p>
                 </div>
               </div>
             </div>

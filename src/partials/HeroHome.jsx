@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Modal from "../partials/Modal";
 // import Modal from "../utils/Modal"; test?
 
 import HeroImage from "../images/hero-image.png";
@@ -20,6 +19,7 @@ function HeroHome() {
           height="578"
           viewBox="0 0 1360 578"
           xmlns="http://www.w3.org/2000/svg"
+          className="animate-float"
         >
           <defs>
             <linearGradient

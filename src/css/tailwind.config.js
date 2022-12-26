@@ -115,7 +115,7 @@ module.exports = {
         '98': '.98'
       },
       animation: {
-        float: 'float 3s ease-in-out infinite',
+        float: 'float 7s ease-in-out infinite',
       },
       keyframes: {
         float: {
