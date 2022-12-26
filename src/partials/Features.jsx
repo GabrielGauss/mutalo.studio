@@ -23,8 +23,9 @@ function Features() {
 
   return (
     <section className="relative">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
+      {/* IMPORTANTE Section background (needs .relative class on parent and next sibling elements) */}
       <div
+        id="Features"
         className="absolute inset-0 bg-gray-100 pointer-events-none mb-16"
         aria-hidden="true"
       ></div>
@@ -234,24 +235,18 @@ function Features() {
                         competitors and build trust with customers. A
                         well-defined brand identity includes elements such as
                         your company's name, logo, color palette, font, and tone
-                        of voice. These elements should be consistent across all
-                        of your marketing materials and communication channels,
-                        and should accurately reflect your brand's personality
-                        and values. Having a strong brand identity can help you
-                        attract and retain customers, as they will recognize and
-                        trust your brand. It can also help you build a loyal
-                        following and drive word-of-mouth marketing. As a
-                        marketing agency, we can help you develop a
-                        comprehensive brand identity that accurately represents
-                        your company and resonates with your target audience.
-                        Our team will work with you to understand your brand's
-                        personality and values, and will create a visual and
-                        verbal identity that reflects those qualities. We'll
-                        also help you implement your new brand identity across
-                        all of your marketing materials and communication
-                        channels, ensuring consistency and clarity. Let us help
-                        you build a strong brand identity that sets your
-                        business apart from the competition.
+                        of voice.
+                        <br></br>
+                        <span className="font-bold">
+                          Our team will work with you to understand your brand's
+                          personality and values, and will create a visual and
+                          verbal identity that reflects those qualities. We'll
+                          also help you implement your new brand identity across
+                          all of your marketing materials and communication
+                          channels, ensuring consistency and clarity.
+                        </span>
+                        <br></br> Let us help you build a strong brand identity
+                        that sets your business apart from the competition.
                       </p>
                     </div>
                   </div>
