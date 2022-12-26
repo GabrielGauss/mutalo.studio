@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import Modal from "../utils/Modal";
+import Modal from "../partials/Modal";
+// import Modal from "../utils/Modal"; test?
 
 import HeroImage from "../images/hero-image.png";
+import Features from "./Features";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section className="relative">
-      {/* Ilustracion detraz del hero */}
+      {/* Ilustracion detras del hero */}
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
         aria-hidden="true"
@@ -84,10 +86,7 @@ function HeroHome() {
                 </a>
               </div>
               <div>
-                <a
-                  className="btn text-white bg-gray-800 hover:bg-gray-700 w-full sm:w-auto sm:ml-4"
-                  href="#0"
-                >
+                <a className="btn text-white bg-gray-800 hover:bg-gray-700 w-full sm:w-auto sm:ml-4">
                   Learn more
                 </a>
               </div>
@@ -197,23 +196,6 @@ function HeroHome() {
                 <span className="ml-3">Watch the full video (2 min)</span>
               </button>
             </div> */}
-
-            {/* Modal */}
-            <Modal
-              id="modal"
-              ariaLabel="modal-headline"
-              show={videoModalOpen}
-              handleClose={() => setVideoModalOpen(false)}
-            >
-              <div className="relative pb-9/16">
-                <iframe
-                  className="absolute w-full h-full"
-                  src="https://player.vimeo.com/video/174002812"
-                  title="Video"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </Modal>
           </div>
         </div>
       </div>

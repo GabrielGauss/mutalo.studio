@@ -71,6 +71,21 @@ const Modal = () => {
             <form action="#" class="mb-6">
               <div class="mb-6">
                 <label
+                  for="subject"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Tell us who you are"
+                  required=""
+                />
+              </div>
+              <div class="mb-6">
+                <label
                   for="email"
                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
@@ -80,22 +95,7 @@ const Modal = () => {
                   type="email"
                   id="email"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="name@company.com"
-                  required=""
-                />
-              </div>
-              <div class="mb-6">
-                <label
-                  for="subject"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Let us know how we can help you"
+                  placeholder="name@YourCompany.com"
                   required=""
                 />
               </div>
@@ -110,7 +110,7 @@ const Modal = () => {
                   id="message"
                   rows="4"
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Your message..."
+                  placeholder="Tell us what can we do for you"
                 ></textarea>
               </div>
               <button
@@ -120,7 +120,7 @@ const Modal = () => {
                 Send Message
               </button>
             </form>
-            <h2 className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 py-6">
+            <h2 className="block  text-center mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 py-6">
               Or just
             </h2>
             <button

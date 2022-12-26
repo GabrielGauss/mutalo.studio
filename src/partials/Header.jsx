@@ -98,6 +98,9 @@ export default function Header() {
             </a>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
+            <Modal />
+          </div>
+          <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -338,12 +341,13 @@ export default function Header() {
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <a
+                <Modal />
+                {/* <a
                   href="#"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   hola
-                </a>
+                </a> */}
 
                 <a
                   href="#"

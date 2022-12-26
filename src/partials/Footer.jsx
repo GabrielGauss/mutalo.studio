@@ -172,14 +172,15 @@ function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3 flex flex-col gap-3">
             <h6 className="text-gray-800 font-medium mb-2">Contact Info</h6>
             <a
-              href=""
+              href="mailto:mutalo@studio?subject = Feedback&body = Message"
               className=" text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
             >
               Hello@mutalo.com
             </a>
             <a
-              href=""
+              href="https://wa.me/393515332816?text=I'm%20interested%20,%20Tell%20me%20more"
               className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+              target="_blank"
             >
               +39 351 533 2816
             </a>
