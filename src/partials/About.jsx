@@ -15,7 +15,7 @@ const About = () => {
       </h1>
       {/* <span className="hide md:text-10xl text-gray-300">|</span> */}
       <p className=" mb-20 p-10  text-xl text-gray-500 text-left basis-2/3 md:py-20  md:px-40">
-        Mutalo is a succesfull young marketing agency that loves their clients.
+        Mutalo is a young marketing agency that loves their clients.
         <br></br>
         <strong>Our mission and vision</strong> is to provide the best ROI
         possilbe while building the relationship between client and agency along

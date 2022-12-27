@@ -5,10 +5,10 @@ function FeaturesBlocks() {
     <section className="relative pt-60 md:pt-10">
       {/* Section background (needs .relative class on parent and next sibling elements) */}
       <div
-        className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-800 pointer-events-none"
+        className="  absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-800 pointer-events-none"
         aria-hidden="true"
       ></div>
-      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
+      <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2 "></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
@@ -65,7 +65,7 @@ function FeaturesBlocks() {
                 Initial Contact
               </h4>
               <p className="text-gray-600 text-center">
-                let's known each other. we're just a video call away
+                let's get to know each other. we're just a video call away
               </p>
             </div>
 

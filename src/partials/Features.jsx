@@ -151,7 +151,7 @@ function Features() {
                 >
                   <div>
                     <h6 className="h5 mb-3 text-violet-500 text font-semibold">
-                      Ads & traffic
+                      Ads & Traffic
                     </h6>
                     <div className="font-bold text-xl py-2 leading-snug tracking-tight mb-1">
                       Boost your product to the skies
@@ -190,7 +190,7 @@ function Features() {
                 <Transition
                   show={tab === 1}
                   appear={true}
-                  className="w-full"
+                  className="w-full "
                   enter="transition ease-in-out duration-700 transform order-first"
                   enterStart="opacity-0 translate-y-16"
                   enterEnd="opacity-100 translate-y-0"
@@ -215,9 +215,9 @@ function Features() {
                       style={{ top: "30%" }}
                     /> */}
                     <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
-                      <div className="flex flex-row-between">
+                      <div className="flex flex-row-between sticky">
                         <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
-                          Digital presence & Brand identity
+                          Digital Presence & Brand Identity
                         </h2>
                         <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full shadow flex-shrink-0 ml-3 hover:scale-105">
                           <svg
@@ -237,6 +237,7 @@ function Features() {
                         your company's name, logo, color palette, font, and tone
                         of voice.
                         <br></br>
+                        <br></br>
                         <span className="font-bold">
                           Our team will work with you to understand your brand's
                           personality and values, and will create a visual and
@@ -245,6 +246,7 @@ function Features() {
                           all of your marketing materials and communication
                           channels, ensuring consistency and clarity.
                         </span>
+                        <br></br>
                         <br></br> Let us help you build a strong brand identity
                         that sets your business apart from the competition.
                       </p>
@@ -274,7 +276,7 @@ function Features() {
                     <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
                       <div className="flex flex-row-between">
                         <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
-                          Data analitics
+                          Data Analitics
                         </h2>
                         <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full shadow flex-shrink-0 ml-3 hover:scale-105">
                           <svg
@@ -303,6 +305,7 @@ function Features() {
                         For example, you can use data to understand which types
                         of ads are generating the most clicks, conversions, or
                         engagement, and adjust your approach accordingly.
+                        <br></br>
                         <br></br>
                         You can also use data to determine the best times to run
                         your ads, the most effective channels to use, and the
@@ -357,9 +360,15 @@ function Features() {
                         Targeted advertising is a powerful way to reach your
                         ideal customers and drive more sales for your business.
                         Unlike traditional advertising methods, which rely on
-                        reaching a broad audience, targeted ads are focused on
-                        reaching specific individuals based on their interests,
-                        demographics, and other factors.<br></br>
+                        reaching a broad audience,
+                        <strong>
+                          {" "}
+                          targeted ads are focused on reaching specific
+                          individuals based on their interests, demographics,
+                          and other factors
+                        </strong>
+                        .<br></br>
+                        <br></br>
                         This allows you to deliver your message to the people
                         most likely to be interested in your product or service,
                         increasing the likelihood that they will engage with

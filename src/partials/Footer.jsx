@@ -75,7 +75,7 @@ function Footer() {
                   to="#"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  E-Marketing
+                  Ads & Traffic
                 </Link>
               </li>
               <li className="mb-2">
