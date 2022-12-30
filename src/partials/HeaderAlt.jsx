@@ -16,33 +16,34 @@ import {
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 const solutions = [
   {
     name: "Branding & Design",
     description:
       "Let's create a professional and consistent visual identity for your brand",
-    href: "#",
+    href: "#BRAND",
     icon: Squares2X2Icon,
   },
-  {
-    name: "Web Solutions",
-    description:
-      "We provide everything you need to build and maintain a successful website",
-    href: "#",
-    icon: LifebuoyIcon,
-  },
+  // {
+  //   name: "Web Solutions",
+  //   description:
+  //     "We provide everything you need to build and maintain a successful website",
+  //   href: "#SOLUTIONS",
+  //   icon: LifebuoyIcon,
+  // },
   {
     name: "Data Analytics",
     description: "understand and make the most of your data",
-    href: "#",
+    href: "#DATA",
     icon: ChartBarIcon,
   },
   {
     name: "Ads & Traffic",
     description:
       "Attract potential customers and drive traffic to your business",
-    href: "#",
+    href: "#ADS",
     icon: CursorArrowRaysIcon,
   },
 ];
@@ -96,14 +97,14 @@ export default function HeaderAlt() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <Link to="/">
               <span className="sr-only">MUTALO.studio</span>
               <img
                 className="h-8 w-auto sm:h-10 md:h-16"
                 src="./src/images/mutalo-header-logo.png"
                 alt="mutalo-studio"
               ></img>
-            </a>
+            </Link>
           </div>
           <div className="flex items-center justify-end gap-6">
             <div className="-my-2 -mr-2 md:hidden">
@@ -192,13 +193,13 @@ export default function HeaderAlt() {
               )}
             </Popover>
             <a
-              href="#"
+              href="#BLOCKS"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               How we work
             </a>
             <a
-              href="#"
+              href="#ABOUT"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               About
@@ -362,14 +363,14 @@ export default function HeaderAlt() {
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <a
-                  href="#"
+                  href="#BLOCKS"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   How we work
                 </a>
 
                 <a
-                  href="#"
+                  href="#ABOUT"
                   className="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   About

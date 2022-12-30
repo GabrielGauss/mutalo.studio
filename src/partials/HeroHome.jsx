@@ -8,7 +8,7 @@ function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
-    <section className="relative">
+    <section className="relative" id="HOME">
       {/* Ilustracion detras del hero */}
       <div
         className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none"
@@ -86,7 +86,10 @@ function HeroHome() {
                 </a>
               </div>
               <div>
-                <a className="btn text-white bg-gray-800 hover:bg-gray-700 w-full sm:w-auto sm:ml-4">
+                <a
+                  className="btn text-white bg-gray-800 hover:bg-gray-700 w-full sm:w-auto sm:ml-4"
+                  href="#SOLUTIONS"
+                >
                   Learn more
                 </a>
               </div>

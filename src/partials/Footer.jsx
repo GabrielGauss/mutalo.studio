@@ -35,14 +35,14 @@ function Footer() {
             </div>
             <div className="text-sm text-gray-600">
               <Link
-                to="#"
+                to="/Terms"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
                 Terms
               </Link>{" "}
               ·{" "}
               <Link
-                to="#"
+                to="/Privacy"
                 className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out"
               >
                 Privacy Policy
@@ -56,7 +56,7 @@ function Footer() {
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/Solutions"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Web Studio
@@ -64,7 +64,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/Solutions"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Branding & Design
@@ -72,7 +72,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/Solutions"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Ads & Traffic
@@ -80,7 +80,7 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/Solutions"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Analitics & Insights
@@ -90,7 +90,7 @@ function Footer() {
           </div>
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -126,7 +126,7 @@ function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* 4th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
@@ -134,7 +134,7 @@ function Footer() {
             <ul className="text-sm">
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   Home
@@ -142,27 +142,10 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="#"
+                  to="/"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
                   About us
-                </Link>
-              </li>
-
-              <li className="mb-2">
-                <Link
-                  to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Pricing
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="#"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Privacy Policy
                 </Link>
               </li>
             </ul>
