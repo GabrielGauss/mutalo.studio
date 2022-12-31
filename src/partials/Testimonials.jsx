@@ -54,7 +54,7 @@ function Testimonials() {
             </h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">
               We gained trust and respect of clients by delivering rock solid
-              social media marketing on top tier web leaders.
+              social media marketing on top tier web platforms.
             </p>
           </div>
 
