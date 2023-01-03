@@ -1,6 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import { db } from "../db/firebaseConfig.js";
 
 function Newsletter() {
+  const [email, setEmail] = useState("");
+  const [loader, setLoader] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    db.collection("NewsLetter")
+      .add({
+        email: email,
+      })
+      .then(() => {
+        setLoader(false);
+        alert("subscription succeed");
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+
+    setEmail("");
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -109,16 +133,19 @@ function Newsletter() {
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input
                       type="email"
-                      className="form-input w-full appearance-none bg-gray-200 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500"
+                      className="form-input w-full appearance-none bg-gray-200 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-black placeholder-gray-500"
                       placeholder="Your email…"
                       aria-label="Your email…"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <a
+                    <button
+                      type="submit"
                       className="btn text-white bg-pink-500 hover:bg-pink-400 shadow"
-                      href="#0"
+                      onClick={handleSubmit}
                     >
                       Subscribe
-                    </a>
+                    </button>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}

@@ -19,7 +19,7 @@ function HeroHome() {
           height="578"
           viewBox="0 0 1360 578"
           xmlns="http://www.w3.org/2000/svg"
-          className="animate-float"
+          className="animate-float "
         >
           <defs>
             <linearGradient
@@ -28,6 +28,7 @@ function HeroHome() {
               x2="50%"
               y2="100%"
               id="illustration-01"
+              className="shadow-lg"
             >
               <stop stopColor="#FFF" offset="0%" />
               <stop stopColor="#EAEAEA" offset="77.402%" />

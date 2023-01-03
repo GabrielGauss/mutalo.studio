@@ -1,8 +1,41 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SocialLinks from "./SocialLinks";
+import { db } from "../db/firebaseConfig.js";
+import Alert from "@material-tailwind/react";
+import Alerta from "./Alerta";
 
 const Modal = () => {
   const [showModal, setShowModal] = useState(false);
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [loader, setLoader] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    db.collection("contacts")
+      .add({
+        name: name,
+        email: email,
+        message: message,
+      })
+      .then(() => {
+        setLoader(false);
+        alert(<Alerta />);
+      })
+      .catch((error) => {
+        alert(error.message);
+        setLoader(false);
+      });
+
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
 
   return (
     <>
@@ -68,7 +101,10 @@ const Modal = () => {
               </svg>
               <span class="sr-only">Close menu</span>
             </button>
-            <form action="#" class="mb-6">
+
+            {/* FORMULARIO */}
+
+            <form class="mb-6">
               <div class="mb-6">
                 <label
                   for="subject"
@@ -81,7 +117,9 @@ const Modal = () => {
                   id="subject"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Tell us who you are"
-                  required=""
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div class="mb-6">
@@ -96,7 +134,9 @@ const Modal = () => {
                   id="email"
                   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="name@YourCompany.com"
-                  required=""
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div class="mb-6">
@@ -111,15 +151,25 @@ const Modal = () => {
                   rows="4"
                   class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Tell us what can we do for you"
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
               <button
                 type="submit"
                 class="text-white bg-violet-600 hover:bg-violet-700 w-full focus:ring-4 focus:ring-pink-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-violet-600 dark:hover:bg-violet-700 focus:outline-none dark:focus:ring-violet-800 block"
+                style={{
+                  background: loader ? "#f9b0fc" : " rgb(240, 57, 179)",
+                }}
+                onClick={handleSubmit}
               >
                 Send Message
               </button>
             </form>
+
+            {/* FIN FORMULARIO */}
+
             <h2 className="block  text-center mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 py-6">
               Or just
             </h2>
