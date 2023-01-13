@@ -199,13 +199,13 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img
+                    {/* <img
                       className="md:max-w-none mx-auto rounded"
                       src={FeaturesBg}
                       width="500"
                       height="462"
                       alt="Features bg"
-                    />
+                    /> */}
                     {/* <img
                       className="md:max-w-none absolute w-full left-0 transform animate-float"
                       src={FeaturesElement}
@@ -214,7 +214,7 @@ function Features() {
                       alt="Element"
                       style={{ top: "30%" }}
                     /> */}
-                    <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
+                    <div className="relative md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
                       <div className="flex flex-row-between sticky">
                         <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
                           Digital Presence & Brand Identity
@@ -266,14 +266,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
+                    <div className="relative md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
                       <div className="flex flex-row-between">
                         <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
                           Data Analitics
@@ -330,14 +323,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img
-                      className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <div className="md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
+                    <div className="relative md:max-w-none text-left absolute w-full bg-gray-200 p-10 rounded">
                       <div className="flex flex-row-between">
                         <h2 className=" font-bold text-xl py-2 leading-snug tracking-tight mb-1">
                           Ads & Traffic

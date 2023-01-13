@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../db/firebaseConfig.js";
+import { Alert } from "@material-tailwind/react";
 
 function Newsletter() {
   const [email, setEmail] = useState("");
@@ -15,7 +16,7 @@ function Newsletter() {
       })
       .then(() => {
         setLoader(false);
-        alert("subscription succeed");
+        alert(<Alert>hola</Alert>);
       })
       .catch((error) => {
         alert(error.message);
@@ -129,7 +130,7 @@ function Newsletter() {
                 </p>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto">
+                <form className="w-full lg:w-auto" onSubmit={handleSubmit}>
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <input
                       type="email"
@@ -137,12 +138,12 @@ function Newsletter() {
                       placeholder="Your email…"
                       aria-label="Your email…"
                       value={email}
+                      required
                       onChange={(e) => setEmail(e.target.value)}
                     />
                     <button
                       type="submit"
                       className="btn text-white bg-pink-500 hover:bg-pink-400 shadow"
-                      onClick={handleSubmit}
                     >
                       Subscribe
                     </button>

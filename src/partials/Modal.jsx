@@ -10,13 +10,11 @@ const Modal = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [loader, setLoader] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoader(true);
-
     db.collection("contacts")
       .add({
         name: name,
@@ -25,7 +23,7 @@ const Modal = () => {
       })
       .then(() => {
         setLoader(false);
-        alert(<Alerta />);
+        alert("message Succesful");
       })
       .catch((error) => {
         alert(error.message);
@@ -104,7 +102,7 @@ const Modal = () => {
 
             {/* FORMULARIO */}
 
-            <form class="mb-6">
+            <form class="mb-6" onSubmit={handleSubmit}>
               <div class="mb-6">
                 <label
                   for="subject"
@@ -112,6 +110,7 @@ const Modal = () => {
                 >
                   Your Name
                 </label>
+
                 <input
                   type="text"
                   id="subject"
@@ -129,6 +128,7 @@ const Modal = () => {
                 >
                   Your email
                 </label>
+
                 <input
                   type="email"
                   id="email"
@@ -146,6 +146,7 @@ const Modal = () => {
                 >
                   Your message
                 </label>
+
                 <textarea
                   id="message"
                   rows="4"
@@ -162,7 +163,6 @@ const Modal = () => {
                 style={{
                   background: loader ? "#f9b0fc" : " rgb(240, 57, 179)",
                 }}
-                onClick={handleSubmit}
               >
                 Send Message
               </button>

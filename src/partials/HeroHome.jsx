@@ -50,15 +50,15 @@ function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay="150"
           >
-            <h1 className="text-8xl text-gray-800 text-b m-0 text-left font-extrabold  tracking-tighter md:text-8xl basis-1/2">
+            <h1 className="text-8xl text-gray-800 m-0 text-left font-extrabold  tracking-tighter md:text-8xl basis-1/2">
               we bring
-              <span className="text-8xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-400">
+              <span className="text-6xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-400">
                 <br></br>
                 {""}solutions
               </span>
               <br></br>
               {""}to your
-              <span className="text-8xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-400">
+              <span className="text-6xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-400">
                 <br></br> bussiness
               </span>
             </h1>
