@@ -17,10 +17,7 @@ function Footer() {
                 className="inline-block text-left"
                 aria-label="Mutalo"
               >
-                <img
-                  src="./src/images/mutalo-header-logo.png"
-                  alt="mutalo-logo"
-                />
+                <img src="./src/images/mtlo.svg" alt="mutalo-logo" />
                 {/* <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="footer-logo">

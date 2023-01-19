@@ -93,15 +93,15 @@ function classNames(...classes) {
 
 export default function HeaderAlt() {
   return (
-    <Popover className="relative bg-white">
+    <Popover className="relative bg-whit">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <div className="flex justify-start align-center lg:w-0 lg:flex-1">
             <Link to="/">
               <span className="sr-only">MUTALO.studio</span>
               <img
                 className="h-8 w-auto sm:h-10 md:h-16"
-                src="./src/images/mutalo-header-logo.png"
+                src="./src/images/mtlo.svg"
                 alt="mutalo-studio"
               ></img>
             </Link>
@@ -117,7 +117,10 @@ export default function HeaderAlt() {
               </Popover.Button>
             </div>
           </div>
-          <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+          <Popover.Group
+            as="nav"
+            className="hidden space-x-10 md:flex items-center"
+          >
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -328,7 +331,7 @@ export default function HeaderAlt() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="./src/images/mutalo-header-logo.png"
+                    src="./src/images/mtlo.svg"
                     alt="MUTALO.studio"
                   />
                 </div>

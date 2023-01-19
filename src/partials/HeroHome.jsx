@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 // import Modal from "../utils/Modal"; test?
 
-import HeroImage from "../images/hero-image.png";
-import Features from "./Features";
-
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
 
@@ -32,7 +29,7 @@ function HeroHome() {
             >
               <stop stopColor="#FFF" offset="0%" />
               <stop stopColor="#EAEAEA" offset="77.402%" />
-              <stop stopColor="#DFDFDF" offset="100%" />
+              <stop stopColor="#dfdfdf" offset="100%" />
             </linearGradient>
           </defs>
           <g fill="url(#illustration-01)" fillRule="evenodd">
@@ -59,7 +56,8 @@ function HeroHome() {
               <br></br>
               {""}to your
               <span className="text-6xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-400">
-                <br></br> bussiness
+                <br></br>
+                {""}business
               </span>
             </h1>
           </div>
@@ -70,7 +68,7 @@ function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay="150"
             >
-              With<strong> Mutalo</strong>, turn your web visitors into
+              With <strong>MUTALO</strong>, turn your web visitors into
               customers.
             </p>
             <div
