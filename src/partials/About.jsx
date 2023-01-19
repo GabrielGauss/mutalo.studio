@@ -16,13 +16,19 @@ const About = () => {
       </h1>
       {/* <span className="hide md:text-10xl text-gray-300">|</span> */}
       <p className=" mb-20 p-10  text-xl text-gray-500 text-left basis-2/3 md:py-20  md:px-40">
-        Mutalo is a young marketing agency that loves their clients.
+        Mutalo is a young marketing agency.
+        <br></br> we are a team of social media experts dedicated to helping
+        businesses and individuals achieve their goals through effective social
+        media marketing.
+        <br></br> Whether you need help with social media management, content
+        creation, advertising, or analytics, we have got you covered. Our
+        ultimate goal is to help you increase your online presence, engagement,
+        and revenue.
         <br></br>
-        <strong>Our mission and vision</strong> is to provide the best ROI
-        possilbe while building the relationship between client and agency along
-        the way.
-        <br></br>We are a curious agency, we love to find new ways of doing
-        things, testing our strategies and getting inspired by what we do.{" "}
+        <br></br>
+        <strong>
+          Let us help you take your social media game to the next level.
+        </strong>
       </p>
     </div>
   );

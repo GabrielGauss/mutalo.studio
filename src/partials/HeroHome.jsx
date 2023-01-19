@@ -40,14 +40,14 @@ function HeroHome() {
       </div>
       <div className="max-w-6xl mx-auto px-2 sm:px-6">
         {/* Hero content */}
-        <div className="pt-32 pb-10 md:pt-12 md:pb-30 ">
+        <div className="pt-12 pb-10 md:pt-12 md:pb-30 ">
           {/* Section header */}
           <div
-            className="flex-col my-10 pb-12 md:pb-16 flex gap-6"
+            className="flex-col my-8 pb-12 md:pb-16 flex gap-6"
             data-aos="zoom-y-out"
             data-aos-delay="150"
           >
-            <h1 className="text-8xl text-gray-800 m-0 text-left font-extrabold  tracking-tighter md:text-8xl basis-1/2">
+            <h1 className="text-6xl text-gray-800 m-0 text-left font-extrabold  tracking-tighter md:text-8xl basis-1/2">
               we bring
               <span className="text-6xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-pink-400">
                 <br></br>
